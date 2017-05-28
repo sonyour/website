@@ -1,0 +1,63 @@
+.k-header-container{
+	border-bottom: 1px solid #e3e7e8;
+}
+.header{
+	position:relative;
+	max-width:1400px;
+	min-width:1300px;
+	height:80px;
+	padding-top:20px;
+	margin:0 auto;
+}
+.logo{
+	float:left;
+	margin-right:90px;
+}
+.logo a:hover{
+	text-decoration: none;
+}
+.logo span{
+	font-size: 18px;
+	font-weight: bold;
+	padding-left:20px;
+}
+/*µ¼º½*/
+.navbar{
+	float:left;
+	margin-right:15px;
+	margin-bottom:0px;
+}
+.navbar-form{
+	position: absolute;
+	right:0;
+}
+
+/*µÇÂ½×¢²á*/
+.usrCenter{
+	float:left;
+	padding:10px;
+}
+#usr-login{
+	margin-right:15px;
+}
+
+/*À¸Ä¿µ¼º½*/
+#model-bar{
+	border-bottom: 1px solid #e3e7e8;
+}
+#model-bar .nav{
+	width:1400px;
+	height:54px;
+	margin:0 auto;
+}
+#model-bar .nav > li > a{
+	padding:17px 15px 15px 15px;
+	border-radius:0px;
+}
+#model-bar .nav > li > a:focus, .nav > li > a:hover{
+	background: none!important;
+}
+a.active{
+	color: #2fb3ff;
+	border-bottom: 2px solid #2fb3ff;
+}

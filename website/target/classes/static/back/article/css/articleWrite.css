@@ -1,0 +1,22 @@
+.k-btn-group{
+	margin:15px 0 20px 0; 
+}
+.k-btn-group button{
+	margin-right:10px;
+}
+#isView {
+	clear: both;
+}
+#isView label{
+	display: block;
+}
+#isView .radio{
+	float:left;
+	width:75px;
+	margin-top:8px;
+}
+#digest{
+	resize: none;
+}
+#container{
+}
