@@ -11,7 +11,7 @@
     <script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
     <!-- ueditor编辑器源码文件 -->
     <script type="text/javascript" src="/ueditor/ueditor.all.min.js"></script>
-    <link rel="stylesheet" href="/back/article/css/articleWrite.css">
+    <link rel="stylesheet" href="/back/css/article/articleWrite.css">
     <title>后台管理系统</title>
 </head>
 <body>
@@ -35,48 +35,46 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form">
-                                    	<div class="k-btn-group">
-	                                    	<button type="submit" class="btn btn-default">发布</button>
-	                                        <button type="reset" class="btn btn-default">保存</button>
-	                                        <button type="reset" class="btn btn-default">取消</button>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>标题</label>
-                                            <input class="form-control" placeholder="文章标题">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>关键字</label>
-                                            <input class="form-control" placeholder="便于搜索该文章的关键字">
-                                            <!-- <p class="help-block">多个关键字使用用”，“号隔开</p> -->
-                                        </div>
-                                        <div class="form-group clearfix" id="isView">
-                                            <label>文章是否可见</label>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">可见
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">不可见
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group" id="digest">
-                                            <label>摘要</label>
-                                            <textarea class="form-control" rows="4"></textarea>
-                                        </div>
-                                        <div class="form-group" id="digest">
-                                            <label>文章内容</label>
-                                            <script id="container" name="content" type="text/plain" style="height:300px;">
+                                   	<div class="k-btn-group">
+                                    	<button type="button" class="btn btn-default save">发布</button>
+                                        <button type="reset" class="btn btn-default">保存</button>
+                                        <button type="reset" class="btn btn-default">取消</button>
+                                       </div>
+                                       <div class="form-group">
+                                           <label>标题</label>
+                                           <input id="title" class="form-control" placeholder="文章标题">
+                                       </div>
+                                       <div class="form-group">
+                                           <label>关键字</label>
+                                           <input id="keyword" class="form-control" placeholder="便于搜索该文章的关键字">
+                                           <!-- <p class="help-block">多个关键字使用用”，“号隔开</p> -->
+                                       </div>
+                                       <div class="form-group clearfix" id="isView">
+                                           <label>文章是否可见</label>
+                                           <div class="radio">
+                                               <label>
+                                                   <input type="radio" name="optionsRadios" id="optionsRadios1" value="1" checked="checked">可见
+                                               </label>
+                                           </div>
+                                           <div class="radio">
+                                               <label>
+                                                   <input type="radio" name="optionsRadios" id="optionsRadios1" value="0">不可见
+                                               </label>
+                                           </div>
+                                       </div>
+                                       <div class="form-group">
+                                           <label>摘要</label>
+                                           <textarea id="digest" class="form-control" rows="5"></textarea>
+                                       </div>
+                                       <div class="form-group" id="digest">
+                                           <label>文章内容</label>
+                                           <script id="container" name="content" type="text/plain" style="height:300px;">
 											
 											</script>
-                                            <script type="text/javascript">
-										        var ue = UE.getEditor('container');
-										    </script>
-                                        </div>
-                                    </form>
+                                           <script type="text/javascript">
+									        var ue = UE.getEditor('container');
+									    </script>
+                                       </div>
                                 </div>
                             </div>
                             <!-- /.row (nested) -->
@@ -90,9 +88,9 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-
     </div>
     <!-- /#wrapper -->
+    <script type="text/javascript" src="/back/js/article/articleWrite.js"></script>
 </body>
 
 </html>

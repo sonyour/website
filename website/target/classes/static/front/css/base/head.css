@@ -1,3 +1,4 @@
+@charset "utf-8"
 .k-header-container{
 	border-bottom: 1px solid #e3e7e8;
 }
@@ -6,8 +7,9 @@
 	max-width:1400px;
 	min-width:1300px;
 	height:80px;
-	padding-top:20px;
-	margin:0 auto;
+	padding:20px 20px;
+	padding-bottom:0;
+	margin:0 auto;	
 }
 .logo{
 	float:left;
@@ -21,7 +23,7 @@
 	font-weight: bold;
 	padding-left:20px;
 }
-/*µ¼º½*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 .navbar{
 	float:left;
 	margin-right:15px;
@@ -32,16 +34,16 @@
 	right:0;
 }
 
-/*µÇÂ½×¢²á*/
+
 .usrCenter{
 	float:left;
-	padding:10px;
+	padding:11px;
 }
 #usr-login{
 	margin-right:15px;
 }
 
-/*À¸Ä¿µ¼º½*/
+
 #model-bar{
 	border-bottom: 1px solid #e3e7e8;
 }
@@ -49,6 +51,7 @@
 	width:1400px;
 	height:54px;
 	margin:0 auto;
+	padding:0 20px;
 }
 #model-bar .nav > li > a{
 	padding:17px 15px 15px 15px;
