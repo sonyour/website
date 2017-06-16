@@ -14,7 +14,7 @@ $(function(){
 			content:content
 		}
 		postArticle(article);
-		console.log(article);
+		console.log(JSON.stringify(article));
 	})
     function postArticle(article) {
         $.ajax({
@@ -23,9 +23,6 @@ $(function(){
             contentType: "application/json",
             dataType: "json",
             data: JSON.stringify(article),
-            success: function (jsonResult) {
-                alert(jsonResult);
-            }
         });
     }
 })

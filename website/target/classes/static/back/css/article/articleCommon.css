@@ -1,0 +1,37 @@
+.k-btn-group{
+	margin:15px 0 20px 0; 
+}
+.k-btn-group a{
+	margin-right:15px;
+	color: #23527c;
+	background-color: #fff;
+	border-color: #23527c;
+}
+.k-btn-group a:hover{
+	color: #fff;
+	border-color: #337ab7;
+	background-color: #337ab7;
+}
+.k-btn-group .viewIn{
+	color: #fff;
+	border-color: #337ab7;
+	background-color: #337ab7;
+}
+#isView {
+	clear: both;
+}
+#isView label{
+	display: block;
+}
+#isView .radio{
+	float:left;
+	width:75px;
+	margin-top:8px;
+	margin-bottom:0;
+}
+#digest{
+	resize: none;
+}
+.form-control{
+	resize: none;
+}
