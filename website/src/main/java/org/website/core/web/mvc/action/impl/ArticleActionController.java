@@ -23,7 +23,8 @@ public class ArticleActionController {
 	
 	@RequestMapping("/articleManager")
     public String articleManager(Model model) {
-		
+		List<Article> articles = articleService.findAll();
+		model.addAttribute("articles",articles);
 		return BASE_URL + "/articleManager";
 	}
 	

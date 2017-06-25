@@ -13,16 +13,27 @@ $(function(){
 			digest:digest,
 			content:content
 		}
-		postArticle(article);
-		console.log(JSON.stringify(article));
+		var mes = postArticle(article);
+		if(mes=="sucess"){
+			window.location.href="/control/articleManager";
+		}else{
+			
+		}
+		
 	})
     function postArticle(article) {
-        $.ajax({
-            type: "POST",
-            url: "/control/uploadArticle",
-            contentType: "application/json",
-            dataType: "json",
-            data: JSON.stringify(article),
-        });
-    }
+       /*$.ajax({
+	        type: "POST",
+	        url: "/control/uploadArticle",
+	        contentType: "application/json",
+	        dataType: "json",
+	        data: JSON.stringify(article),
+        });*/
+		$.post('/control/uploadArticle', { article: article},
+			function (data) {
+				alert(data);
+				},
+		"text");
+	}
+	
 })
